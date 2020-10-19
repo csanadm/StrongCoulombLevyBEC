@@ -29,6 +29,7 @@ In addition, these directories are needed (to be calculated before doing "make")
 - Logs: to store logs
 - Temp: to store temporary files
 - object: to store object files
+- object/deps: to store dependencies
 - exe: to store final executables
 
 
