@@ -3,7 +3,19 @@
 ## Basic info
 This code is meant to calculate 2-pion Bose-Einstein correlation functions including the Coulomb and strong final state effects. This repository contains these directories and files:
 - classes: base classes for the calculations
+  - HypSInt_reader: 
+  - Levy_reader: 
+  - CorrFunc_reader:
+  - CorrFunc_evaluator:
+  - StrongCorrFunc_evaluator:
+  - StrongCorrFunc_reader:
 - sources: main calculation codes
+  - HypSInt_filler: 
+  - Levy_filler: 
+  - CorrFunc_filler: 
+  - functions: 
+  - AfterBurner_CorrFunc_bettereta: 
+  - plotter: 
 - makefile: makefile for building the code
 - Glue.sh: script to glue partial results together
 - condor_inter.sh: running the calculations on condor
