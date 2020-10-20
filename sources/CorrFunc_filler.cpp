@@ -76,9 +76,8 @@ int main(int argc, char** argv)
     cout << "aux writing done." << endl;
   }
   
-//  HypSInt_reader* myHypSInt_reader = new HypSInt_reader("/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/HypSInt_table_mostprecise.dat");
-  Levy_reader* myLevy_reader         = new Levy_reader("/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/Levy_table_mostprecise.dat");
-  HypSInt_reader* myHypSInt_reader_C = new HypSInt_reader("/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/HypSInt_table_final.dat",true);
+  Levy_reader* myLevy_reader         = new Levy_reader("tables/Levy_table_mostprecise.dat");
+  HypSInt_reader* myHypSInt_reader_C = new HypSInt_reader("tables/HypSInt_table_final.dat",true);
   cout << "Not reached" << endl;
   
   double alpha = alpha_min;
