@@ -24,13 +24,13 @@ This repository contains these directories and files:
 One just has to issue "make"
 
 In addition, these directories are needed (to be calculated before doing "make"):
-- tables: to store resulting data tables
-- Data: to store resulting data
-- Logs: to store logs
-- Temp: to store temporary files
-- object: to store object files
-- object/deps: to store dependencies
-- exe: to store final executables
+- `tables`: to store resulting data tables
+- `Data`: to store resulting data
+- `Logs`: to store logs
+- `Temp`: to store temporary files
+- `object`: to store object files
+- `object/deps`: to store dependencies
+- `exe`: to store final executables
 
 
 ## Running
