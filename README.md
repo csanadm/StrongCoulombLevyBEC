@@ -6,9 +6,9 @@ This code is meant to calculate 2-pion Bose-Einstein correlation functions inclu
 This repository contains these directories and files:
 - `sources`: main calculation codes
   - `functions`: definitions of special functions needed for the calculations
-  - `Levy_filler`: calculates the D(r) source function according to equation (11) from [arXiv:1912.01381](https://arxiv.org/abs/1912.01381), creates `Levy_table_<jobnumber>.dat` files, which then have to be concatenated to `Levy_table.dat`
-  - `HypSInt_filler`: calculates the dy integrals, creates `HypSInt_table_<jobnumber>.dat` files, which then have to be concatenated to `HypSInt_table.dat`
-  - `CorrFunc_filler`: calculates the dr integrals using `HypSInt_table.dat` and `Levy_table.dat`, creates `CorrFunc_raw_table_<jobnumber>.dat` files, which then have to be concatenated to `CorrFunc_raw_table.dat`
+  - `Levy_filler`: calculates the D(r) source function according to equation (11) from [arXiv:1912.01381](https://arxiv.org/abs/1912.01381) in a distributed manner, creates `Levy_table_<N>.dat` files (where `<N>` represents the job number), which then have to be concatenated to `Levy_table.dat`
+  - `HypSInt_filler`: calculates the dy integrals, creates `HypSInt_table_<N>.dat` files (again `<N>` represents the job number), which then have to be concatenated to `HypSInt_table.dat`
+  - `CorrFunc_filler`: calculates the dr integrals using `HypSInt_table.dat` and `Levy_table.dat`, creates `CorrFunc_raw_table_<N>.dat` files, which then have to be concatenated to `CorrFunc_raw_table.dat`
   - `AfterBurner_CorrFunc_bettereta`: Combines the results of the four integrals from equations (39)-(42) from arXiv:1912.01381 according to equation (38) using `CorrFunc_raw_table.dat` and creates `CorrFunc_table.dat`
   - `plotter`:  just a simple toolset to make plotting with root easier
 - `classes`: base classes for reading the results of the calculations
