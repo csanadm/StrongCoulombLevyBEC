@@ -139,7 +139,7 @@ int main(int argc, char** argv)
     logfile << "  ialpha = " << ialpha << " finished." << endl;
   }
   delete myHypSInt_reader_C;
-  HypSInt_reader* myHypSInt_reader_S = new HypSInt_reader("/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/HypSInt_table_final.dat",false);
+  HypSInt_reader* myHypSInt_reader_S = new HypSInt_reader("tables/HypSInt_table_final.dat",false);
   alpha = alpha_min;
   for(int ialpha = 0; ialpha < (Nalpha + 1); ialpha++)  
   {
