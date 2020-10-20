@@ -5,8 +5,8 @@ using namespace std;
 #define HBARC 197.3269788
 #define MASS_PI 139.57018
 #define MASS2_PI 19479.8351452
-const char* infile_name = "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/CorrFunc_raw_table_expcutoff.dat";
-const char* outfile_name = "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/CorrFunc_table_expcutoff.dat";
+const char* infile_name = "tables/CorrFunc_raw_table_expcutoff.dat";
+const char* outfile_name = "tables/CorrFunc_table_expcutoff.dat";
 
 const complex<double> I(0., 1.);
 const double a00 = 0.220;
@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 {
   if(argc != 1)
   {
-    cout << "Usage: " << argv[0] << " and nothing fucking else." << endl;
+    cout << "Usage: " << argv[0] << " and nothing else." << endl;
     return 1;
   }
 
