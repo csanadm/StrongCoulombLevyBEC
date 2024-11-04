@@ -1,4 +1,4 @@
-![kép](https://github.com/user-attachments/assets/3b0997d4-08c5-496e-877a-1fe4b72b25a1)# StrongCoulombLevyBEC
+# StrongCoulombLevyBEC
 
 ## Basic info
 This code is meant to calculate 2-pion Bose-Einstein correlation functions including the Coulomb and strong final state effects, more specifically equation (37) from [arXiv:1912.01381](https://arxiv.org/abs/1912.01381). The calculation proceeds through creating binary tables and using them in subsequent steps of the calculation (in order to speed up the process). The code also utilizes condor as a job distribution framework, is hence computing environment specific.
