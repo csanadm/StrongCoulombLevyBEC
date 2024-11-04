@@ -4,8 +4,8 @@ using namespace std;
 //#define K_CONST (493.677 / 2. / 137.036)
 #define K_CONST (938.272/ 2. / 137.036)
 #define HBARC 197.3269788
-const char* infile_name =  "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/nmarci/Strong_Coulomb_Levy/tables/RawIntegrals_table_protons.dat";
-const char* outfile_name = "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/nmarci/Strong_Coulomb_Levy/tables/CorrFunc_table_protons.dat";
+const char* infile_name =  "tables/RawIntegrals_table_protons.dat";
+const char* outfile_name = "tables/CorrFunc_table_protons.dat";
 
 const complex<double> I(0., 1.);
 const double kappa_0 = 1.0 / 7.77; // 7.77 in fm
