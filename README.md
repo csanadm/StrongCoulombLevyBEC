@@ -1,4 +1,4 @@
-# StrongCoulombLevyBEC
+![kép](https://github.com/user-attachments/assets/3b0997d4-08c5-496e-877a-1fe4b72b25a1)# StrongCoulombLevyBEC
 
 ## Basic info
 This code is meant to calculate 2-pion Bose-Einstein correlation functions including the Coulomb and strong final state effects, more specifically equation (37) from [arXiv:1912.01381](https://arxiv.org/abs/1912.01381). The calculation proceeds through creating binary tables and using them in subsequent steps of the calculation (in order to speed up the process). The code also utilizes condor as a job distribution framework, is hence computing environment specific.
@@ -40,3 +40,7 @@ In addition, these directories are needed (to be calculated before doing "make")
 ## Running
 One has to first create the Levy tables via `Levy_filler` and the HypSInt tables via `HypSInt_filler`, then concatenate them via `Glue.sh` (creating a list in the specific order, for example using `ls -1v`). One then runs `CorrFunc_filler` to create CorrFunc tables, and concatenates those as well. Finally, one creates the final tables by running `AfterBurner_CorrFunc_bettereta` as well.
 
+
+## Example plot
+Below we show an example plot with correlation functions of identical charged pion, kaon and proton pairs, for R=3 fm and alpha=1
+![exampfunc_PrPiKa](https://github.com/user-attachments/assets/d9b53aff-fddb-42ef-9da6-7271d887b6d9)
