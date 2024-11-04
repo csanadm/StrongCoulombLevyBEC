@@ -9,7 +9,11 @@ This repository contains these directories and files:
   - `Levy_filler`: calculates the D(r) source function according to equation (11) from [arXiv:1912.01381](https://arxiv.org/abs/1912.01381) in a distributed manner, creates `Levy_table_<N>.dat` files (where `<N>` represents the job number), which then have to be concatenated to `Levy_table.dat`
   - `HypSInt_filler`: calculates the dy integrals, creates `HypSInt_table_<N>.dat` files (again `<N>` represents the job number), which then have to be concatenated to `HypSInt_table.dat`
   - `CorrFunc_filler`: calculates the dr integrals using `HypSInt_table.dat` and `Levy_table.dat`, creates `CorrFunc_raw_table_<N>.dat` files, which then have to be concatenated to `CorrFunc_raw_table.dat`
+  - `CorrFunc_filler_kaons`: same for kaons
+  - `CorrFunc_filler_kaons`: same for protons
   - `AfterBurner_CorrFunc_bettereta`: Combines the results of the four integrals from equations (39)-(42) from arXiv:1912.01381 according to equation (38) using `CorrFunc_raw_table.dat` and creates `CorrFunc_table.dat`
+  - `AfterBurner_CorrFunc_kaons`: same for kaons
+  - `AfterBurner_CorrFunc_protons`: same for protons
   - `plotter`:  just a simple toolset to make plotting with root easier
 - `classes`: base classes for reading the results of the calculations
   - `Levy_reader`: used to read the output of Levy_filler
