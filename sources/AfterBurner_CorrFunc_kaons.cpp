@@ -7,8 +7,8 @@ using namespace std;
 #define MASS2_PI 19479.8351452
 #define MASS_KA 493.677
 #define MASS2_KA 243716.98
-const char* infile_name = "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/CorrFunc_raw_table_kaons.dat";
-const char* outfile_name = "/gpfs/mnt/gpfs02/phenix/plhf/plhf1/kincsesd/Strong_Coulomb_Levy/tables/CorrFunc_table_kaons.dat";
+const char* infile_name = "tables/CorrFunc_raw_table_kaons.dat";
+const char* outfile_name = "tables/CorrFunc_table_kaons.dat";
 
 const complex<double> I(0., 1.);
 const double a00 = 0.220;
